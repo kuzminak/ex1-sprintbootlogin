@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  messages:
+    basename: validation
+
+remote-auth-service:
+  url:  http://localhost:8080/authservice
+  timeout:
+    connect: 5000
+    read: 3000
+
